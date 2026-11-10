@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atención y consultas · EduPrime</title>
+<meta name="description" content="EduPrime: Tu educación, nuestro compromiso. Atención, orientación y apoyo para toda la comunidad educativa.">
+<link rel="icon" href="assets/logo-icono.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="progreso" aria-hidden="true"></div>
+<div class="util">
+  <div class="wrap">
+    <span class="badge" id="estado-top"><i></i><span>Consultando horario…</span></span>
+    <span><a href="mailto:eduprime.aa3@gmail.com">eduprime.aa3@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+573193044407">+57 319 304 4407</a></span>
+  </div>
+</div>
+
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="assets/logo-icono.png" alt=""><span>Edu<b>Prime</b></span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="horario.html">Horario</a></li>
+        <li><a href="equipo.html">Nuestro equipo</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li><a class="cta" href="consultas.html" aria-current="page">Atención y consultas</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="pagehead"><div class="wrap"><div class="crumb"><a href="index.html">Inicio</a> / Atención y consultas</div><h1>Atención y consultas</h1><p>Revisa las preguntas frecuentes o escríbenos. Respondemos en un máximo de 2 días hábiles.</p></div></div>
+<main>
+<section id="consultas" class="solo">
+  <div class="wrap">
+    
+    <div class="ask">
+      <div>
+        <details open><summary>¿Cómo solicito información académica?</summary><p>Envíanos tu consulta con el formulario y elige “Información académica”. Te respondemos por correo.</p></details>
+        <details><summary>¿Quién puede hacer una consulta?</summary><p>Estudiantes, padres de familia, docentes y personal administrativo de la comunidad educativa.</p></details>
+        <details><summary>¿Cómo me entero de los avisos importantes?</summary><p>Publicamos los comunicados en esta página y los enviamos por nuestros canales de contacto.</p></details>
+        <details><summary>¿Cuánto tardan en responder?</summary><p>Atendemos las consultas en un máximo de 2 días hábiles, dentro de nuestro horario de atención.</p></details>
+        <details><summary>¿Puedo visitarlos en persona?</summary><p>Sí, en nuestro horario de atención y en la dirección indicada en la sección de contactos.</p></details>
+      </div>
+      <form class="card form" id="form-consulta">
+        <h3>Envíanos tu consulta</h3>
+        <p class="form-intro">Completa los datos y envíanos tu mensaje. Te respondemos al correo que nos dejes.</p>
+        <div class="two">
+          <label for="f-nombre">Nombre
+            <input id="f-nombre" name="nombre" autocomplete="name" placeholder="Tu nombre completo" required minlength="3" maxlength="80">
+          </label>
+          <label for="f-correo">Correo electrónico
+            <input id="f-correo" name="correo" type="email" autocomplete="email" placeholder="tu@correo.com" required maxlength="120">
+          </label>
+        </div>
+        <label for="f-tipo">Tipo de consulta
+          <select id="f-tipo" name="tipo">
+            <option>Información académica</option><option>Avisos y comunicados</option><option>Soporte técnico</option><option>Otro</option>
+          </select>
+        </label>
+        <label for="f-msg">Mensaje
+          <textarea id="f-msg" name="mensaje" placeholder="Escribe aquí tu consulta" required minlength="10" maxlength="1500"></textarea>
+        </label>
+        <button class="btn" type="submit" id="enviar">Enviar consulta</button>
+        <p id="msg" role="status" aria-live="polite"></p>
+        <p class="form-note">Usamos tus datos solo para responder tu consulta.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div><a class="brand" href="index.html"><img src="assets/logo-icono.png" alt=""><span>Edu<b>Prime</b></span></a><p>Tu educación, nuestro compromiso.</p><p class="inst">Proyecto de la Institución Educativa Manuel Elkin Patarroyo · Girardot, Cundinamarca · Grado 10 · 2026</p></div>
+    <div><h3>Páginas</h3><a href="quienes-somos.html">Quiénes somos</a><a href="horario.html">Horario de atención</a><a href="equipo.html">Nuestro equipo</a></div>
+    <div><h3>Contacto</h3><a href="mailto:eduprime.aa3@gmail.com">eduprime.aa3@gmail.com</a><a href="tel:+573193044407">+57 319 304 4407</a><a href="consultas.html">Atención y consultas</a></div>
+  </div>
+  <div class="strip">EduPrime: juntos por una mejor educación.</div>
+</footer>
+<button type="button" class="a-top" id="a-top" aria-label="Volver arriba"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg></button>
+<script src="js/script.js"></script>
+</body>
+</html>
